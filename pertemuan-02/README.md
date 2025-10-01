@@ -1,5 +1,5 @@
 # pertemuan-02
-NIM:251150016
+NIM:251150016<br>
 NAMA:DIMAS DAFFAH
 
-hari ini, rabu 1.oktober.2025 sya mempelajarin:
+hari ini, rabu 1.oktober.2025 saya mempelajarin:
