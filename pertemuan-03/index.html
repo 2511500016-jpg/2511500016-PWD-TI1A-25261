@@ -8,7 +8,109 @@
     <header>
         <h1>Ini Header</h1>
         <nav>
-            <ul>
+          <style>
+
+body {
+  line-height:1,5;
+}
+header {
+  background:#003366;
+  color:#fff;
+  padding:20px;
+  text-align: center;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+header li a {
+  color:#fff;
+  text-decoration: none;
+  padding: 6px 12px;
+} 
+
+#home, 
+#about, 
+#contact { 
+ background-color: #ffffff; 
+ border-radius: 10px; 
+ padding: 20px; 
+ max-width: 700px; 
+ margin: 20px auto; 
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#home h2, 
+#about h2, 
+#contact h2 { 
+ color: #003366; 
+ border-bottom: 2px solid #003366; 
+ padding-bottom: 6px; 
+ margin-top: 0; 
+ margin-bottom: 16px; 
+}
+
+#home p { 
+ text-align: justify
+}
+
+footer { 
+ background: #222; 
+ color: #aaa; 
+ text-align: center; 
+ padding: 10px; 
+}
+
+header li a:hover { 
+ background-color: #85020d; 
+ border-radius: 6px; 
+ transition: background-color 0.3s ease; 
+}
+
+header li a:focus { 
+ outline: 2px solid #fff; 
+ outline-offset: 2px; 
+ border-radius: 6px; 
+ background-color: rgba(255, 255, 255, 0.15); 
+}
+
+header li a:active { 
+background-color: #cc04a1; 
+transform: translateY(1px); 
+}
+
+@media (max-width: 600px) { 
+header { 
+ padding: 16px; 
+ position: sticky; 
+ top: 0; 
+ z-index: 1000; 
+}
+
+header h1 { 
+ margin: 0 0 8px; 
+ font-size: 20px; 
+ line-height: 1.2; 
+}
+
+header ul { 
+ flex-direction: column; 
+ align-items: stretch;gap: 8px; 
+ margin: 8px 0 0; 
+}
+
+header li a { 
+ display: block; 
+ padding: 12px 14px; 
+ border: 1px solid rgba(255, 255, 255, .35); 
+ background: rgba(255, 255, 255, .08); backdrop-filter: saturate(120%); 
+} 
+}
+</style>
+                <ul>
                 <li><a href="#Home">Beranda</a></li>
                 <li><a href="#About">Tentang</a></li>
                 <li><a href="#Contact">Kontak</a></li>
@@ -90,6 +192,7 @@
   <link rel="stylesheet" href="style.html">
 </head>
 <body>
+
   <div class="container">
     <h2>kontak saya ini</h2>
     <form action=""method="get">
@@ -106,20 +209,22 @@
       <button type="submit" class="kirim">Kirim</button>
       <button type="reset" class="batal">Batal</button>
       <style>
-        
+       
         body {
-  justify-content: center;
-  align-items: center;
-  height: 200vh;
-  margin: 0;
-}
+      display: block;
+      align-items: baseline;
+      margin: 0;
+      padding: 6px 0;
+      border-bottom: 20px solid #e6e6e6;
+    }
 
 .container {
+  max-width: 700px;
+margin: 20px auto;
   background: rgba(77, 6, 242, 0.865);
   backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 15px;
-  width: 320px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0,2);
   color: white;
   text-align: center;
