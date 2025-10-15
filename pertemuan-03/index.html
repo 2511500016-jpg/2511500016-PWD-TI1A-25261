@@ -3,16 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Judul halaman</title>
-<style>
+   <title>Judul halaman</title>
+  <body>
+    <header>
+        <h1>Ini Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Beranda</a></li>
+                <li><a href="#About">Tentang</a></li>
+                <li><a href="#Contact">Kontak</a></li>
+            </ul>
+        </nv>
+    </header>
+    <main>
+       <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Ini contoh Paragraf HTML.</p>
+        </section>
+        <style>
     
-    #about {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 700px;
-      margin: 20px auto;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     #about { 
+    background-color: #5219ee; 
+    border-radius: 10px; 
+    padding: 20px; 
+    max-width: 700px; 
+    margin: 20px auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     }
 
    
@@ -57,22 +73,6 @@
       }
     }
  </style>
-  <body>
-    <header>
-        <h1>Ini Header</h1>
-        <nav>
-            <ul>
-                <li><a href="#Home">Beranda</a></li>
-                <li><a href="#About">Tentang</a></li>
-                <li><a href="#Contact">Kontak</a></li>
-            </ul>
-        </nv>
-    </header>
-    <main>
-       <section id="home">
-            <h2>Selamat Datang</h2>
-            <p>Ini contoh Paragraf HTML.</p>
-        </section></head>
 <section id="about">
       <h2>Tentang saya</h2>
             <p><strong>NIM:</strong> 2511500016</p>
@@ -86,37 +86,45 @@
             <p><strong>Nama Kakak:</strong> Firsta Ulfiyah</p>
             <p><strong>Nama Adik:</strong> Dimas daffah</p>
         </section>
-        <section id="contact">
-            <h2>Kontak kami</h2>
-            <form action=""method="get">
-                <input type="color">
-                <label for="txtNama">Nama:</label>
-                <input type="text" id="txtNama" Name="txtNama"placeholder="Isikan Nama" required autocomplete="name">
-                
-                <label for="txtEmail">Email:</label>
-                <input type="Email" id="txtEmail"name="txtEmail"placeholder="Isikan Email" required autocomplete="email">
+  <div class="container">
+    <h2>kontak saya ini</h2>
+    <form action=""method="get">
+    <input type="color">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" placeholder="masukkan nama">
 
-                <label for="txtPesan">Pesan:</label>
-                <textarea id="txtPesan" name="txtPesan"placeholder="Isikan Pesan" required></textarea>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="masukkan email">
 
-           l     <button type="submit">Kirim</button>
-                <button type="reset">Batal</button>
-                <style>
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" rows="4" placeholder="tulis pesan anda..."></textarea>
+
+      <button type="submit" class="kirim">Kirim</button>
+      <button type="reset" class="batal">Batal</button>
+      </section>
+      <style>
+        
+        body {
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  margin: 0;
+}
 .container {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 320px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  color: white;
+  color: blue;
   text-align: center;
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 24px;
-  text-shadow: 1px 1px 3px rgba(8, 8, 243, 0.872);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 label {
@@ -166,14 +174,12 @@ button {
 
 .batal:hover {
   background-color: #c0392b;
-}
+}   
 </style>
-            </form>
-        </section>
+</section>
     </main>
     <footer>
         <p>&copy; 2025 Dimas Daffah [2511500016]</p>
     </footer>
 </body>
 </html>
-        
