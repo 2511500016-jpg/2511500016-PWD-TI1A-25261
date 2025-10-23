@@ -7,3 +7,4 @@ Hari ini, Rabu 22 Oktober 2025, Saya belajar:
 <ol>
   <li>copy file index.html dzn style.css folder pertemuan-04</li>
   <li>tombol hambuger</li>
+   <li>syling untuk classmenu-toggle</li>
