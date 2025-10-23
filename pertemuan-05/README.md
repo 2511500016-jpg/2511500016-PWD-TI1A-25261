@@ -12,3 +12,4 @@ Hari ini, Rabu 22 Oktober 2025, Saya belajar:
    <li>styling untuk elemen nav</li>
    <li>styling untuk elemen nav active</li>
    <li>membuat script.js</li>
+   <li>validasi formulir sebelum submit</li>
