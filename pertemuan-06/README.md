@@ -7,4 +7,5 @@ Hari ini, Rabu 29 Oktober 2025, Saya belajar:
 <ol>
 <li>hello.php</li>
 <li>index.php</li>
+<li>menambah scrip php pad index</li>
 </ol>
