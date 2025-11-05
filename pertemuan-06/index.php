@@ -219,7 +219,8 @@
         <section id="contact" class="container">
             <h2>Kontak Saya</h2>
             <form action="" method="get">
-                <input type="color">
+                <form action="" method="get">
+                
 
                 <label for="nama">Nama:</label>
                 <input type="text" id="nama" placeholder="Masukkan nama" autocomplete="nama"> </label>
