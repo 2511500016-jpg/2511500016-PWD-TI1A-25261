@@ -6,5 +6,5 @@ Nama  : Dimas Daffah<br><br>
 Hari ini, Rabu o5 november 2025, Saya belajar:
 <ol>
 <li>copy seluruh file dari elearning (punya dosen) dosen latihan pertemuan-07</li>
-<li>copy dan rename index php,kemudian menjadi get.php menjadi gey_proses.php</li>
+<li>copy dan rename index php,kemudian menjadi get.php kemudian file baru get_proses.php</li>
 </ol>
