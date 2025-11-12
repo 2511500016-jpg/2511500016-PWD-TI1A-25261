@@ -1,9 +1,19 @@
 <?php
 session_start();
-$sesname = $_SESSION["nama"];
-$sesemail = $_SESSION["email"];
-$sespesan = $_SESSION["pesan"];
-echo "$sesname  $sesemail  $sespesan";
+$sesname = "";
+if (isset($_SESSION["nama"])):
+    $sesname = $_SESSION["nama"];
+endif;
+
+$sesemail = "";
+if (isset($_SESSION["email"])):
+    $sesemail = $_SESSION["email"];
+endif;
+
+$sespesan = "";
+if (isset($_SESSION["pesan"])):
+    $sespesan = $_SESSION["pesan"];
+endif;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +80,7 @@ echo "$sesname  $sesemail  $sespesan";
 
     <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="get_proses.php" method="GET">
+      <form action="post_proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
@@ -89,10 +99,12 @@ echo "$sesname  $sesemail  $sespesan";
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
+      <?php if (!empty($sesname)); ?>
       <p> terima kasih sudah mengubungi kami :
         <label>Nama: <strong><?php echo $sesname; ?></strong></label>
-        <label>Email: <strong><?php echo $sesemail; ?></strong></label>
+         <label>Email: <strong><?php echo $sesemail; ?></strong></label>
         <label>Pesan: <strong><?php echo $sespesan; ?></strong></label>
+        </p>
     </section>
   </main>
 
