@@ -37,6 +37,7 @@ endif;
       <ul>
         <li><a href="#home">Beranda</a></li>
         <li><a href="#about">Tentang</a></li>
+        <li><a href="#pendaftaran">pendaftaran</a></li>
         <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
@@ -61,15 +62,15 @@ endif;
         </label>
 
         <label for="txtNamalengkap"><span>Nama lengkap:</span>
-          <input type="namalengkap" id="txtnamalengkap" name="txtnamalengkap" placeholder="Masukkan namalengkap" required autocomplete="namalengka">
+          <input type="namalengkap" id="txtnamalengkap" name="txtnamalengkap" placeholder="Masukkan nama lengkap" required autocomplete="namalengka">
         </label>
 
         <label for="txtTempatlahir"><span>Tempat lahir:</span>
-          <input type="namaTempatlahir" id="txtTempatlahir" name="txtTempatlahir" placeholder="Masukkan Tempat lahir" required autocomplete="Tempatlahir">
+          <input type="namaTempatlahir" id="txtTempatlahir" name="txt Tempat lahir" placeholder="Masukkan Tempat lahir" required autocomplete="Tempatlahir">
         </label>
        
         <label for="txtTanggallahir"><span>Tanggal Lahir:</span>
-          <input type="nama" id="txtTanggallahir" name="txtTanggallahir" placeholder="Masukkan Tanggallahir" required autocomplete="TanggalLahir">
+          <input type="nama" id="txtTanggallahir" name="txtTanggallahir" placeholder="Masukkan Tanggal lahir" required autocomplete="TanggalLahir">
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
@@ -85,15 +86,15 @@ endif;
         </label>
 
         <label for="txtNamaorangtua"><span>Nama Orang Tua:</span>
-          <input type="namaNamaorangtua" id="txtNamaorangtua" name="txtNamaorangtua" placeholder="Masukkan Namaorangtua" required autocomplete="Namaorangtua">
+          <input type="namaNamaorangtua" id="txtNamaorangtua" name="txtNamaorangtua" placeholder="Masukkan Nama orang tua" required autocomplete="Namaorangtua">
         </label>
 
         <label for="txtNamakakak"><span>Nama Kakak:</span>
-          <input type="namaNamakakak" id="txtNamakakak" name="txtNamakakak" placeholder="Masukkan Namakakak" required autocomplete="Namakakak">
+          <input type="namaNamakakak" id="txtNamakakak" name="txtNamakakak" placeholder="Masukkan Nama kakak" required autocomplete="Namakakak">
         </label>
 
         <label for="txtNamaadik"><span>Nama Adik:</span>
-          <input type="namaNamaadikk" id="txtNamaadik" name="txtNamaadik" placeholder="Masukkan Namaadik" required autocomplete="Namaadik">
+          <input type="namaNamaadikk" id="txtNamaadik" name="txtNamaadik" placeholder="Masukkan Nama adik" required autocomplete="Namaadik">
         </label>
 
 
@@ -162,7 +163,7 @@ endif;
       <?php endif; ?>
 
 
-
+  
     </section>
   </main>
 
