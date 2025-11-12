@@ -88,7 +88,8 @@ header li a:active {
 }
 
 #about p,
-#contact label {
+#contact label,
+#pendaftaran label {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -98,7 +99,8 @@ header li a:active {
 }
 
 #about strong,
-#contact label>span {
+#contact label>span, 
+#pendaftaran label>span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -108,7 +110,8 @@ header li a:active {
 }
 
 #contact input,
-#contact textarea {
+#contact textarea,
+#pendaftaran textarea {
   flex: 1;
   border: 1px solid #ccc;
   border-radius: 6px;
