@@ -10,4 +10,5 @@ Hari ini, Rabu o5 november 2025, Saya belajar:
 <li>isi get_proses.php</li>
 <li>seession di get_proses>php</li>
 <li>menampilkan session dari get_proses.php</li>
+<li>menampilkan session dari get_proses.php</li>
 </ol>
