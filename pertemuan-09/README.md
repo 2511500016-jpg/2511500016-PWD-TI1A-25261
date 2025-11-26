@@ -13,4 +13,5 @@
   <li>echo session ke nilai label section contact selesai</li>
   <li>Modif sehingga baris kode (10-19) menjadi bentuk array associative</li>
   <li>Lakukan CTRL+SHIFT+R pada http://localhost/pwd/0344300002-PWD-TI1A-2526O/pertemuan-09/index.php</li>
+  <li>Menghapus baris 23-32</li>
 </ol>
