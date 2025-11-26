@@ -14,4 +14,5 @@
   <li>Modif sehingga baris kode (10-19) menjadi bentuk array associative</li>
   <li>Lakukan CTRL+SHIFT+R pada http://localhost/pwd/0344300002-PWD-TI1A-2526O/pertemuan-09/index.php</li>
   <li>Menghapus baris 23-32</li>
+  <li>Simpan file proses.php. Update file readme.MD kemudian simpan. Lakukan perintah git add, git commit, git push.</li>
 </ol>
