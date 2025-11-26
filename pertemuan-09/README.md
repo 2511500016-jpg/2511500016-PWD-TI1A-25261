@@ -18,5 +18,5 @@
   <li>Lakukan CTRL+SHIFT+R pada http://localhost/pwd/0344300002-PWD-TI1A-2526O/pertemuan-09/index.php</li>
   <li>Membuka file index.php di folder pertemuan-09</li>
   <li>Menambahkan file baru dengan nama fungsi.php di folder pertemuan-09</li>
-  <li>Menambahkan kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,dan 4 digit tahun. </li>
+  <li>Menambahkan kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,dan 4 digit tahun.</li>
 </ol>
