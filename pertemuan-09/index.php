@@ -32,6 +32,9 @@ $fieldConfig = [
     "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
     "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
     "adik" => ["label" => "Nama Adik:", "suffix" => ""],
+    "Nama" => ["label" => "Nama:", "suffix" => ""],
+    "email" => ["label" => "Email:", "suffix" => ""],
+    "pesan" => ["label" => "Pesan:", "suffix" => ""],
 ];
 ?>
 

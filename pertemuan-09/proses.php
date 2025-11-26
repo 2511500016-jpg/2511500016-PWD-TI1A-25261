@@ -17,10 +17,13 @@ $arrBiodata = [
 "pekerjaan" => $_POST["txtKerja"] ?? "",
 "ortu" => $_POST["txtNmOrtu"] ?? "",
 "kakak" => $_POST["txtNmKakak"] ?? "",
-"adik" => $_POST["txtNmAdik"] ?? ""
+"adik" => $_POST["txtNmAdik"] ?? "",
+"Nama" => $_POST["txtNama"] ?? "",
+"email" => $_POST["txtEmail"] ?? "",
+"pesan" => $_POST["txtPesan"] ?? ""
 ];
 
 $_SESSION["biodata"] = $arrBiodata;
-header("location: index.php#contact");
+header("location: index.php#Biodata");
 header("location: index.php");
 ?>
