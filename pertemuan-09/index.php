@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once __DIR__ . '/fungsi.php';
+
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
   $sesnama = $_SESSION["sesnama"];
@@ -120,14 +122,9 @@ $fieldConfig = [
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <?php foreach ($fieldConfig as $kunci => $metadata): ?>
-    <p>
-        <strong><?= $metadata["label"] ?></strong>
-        <?= htmlspecialchars($biodata[$kunci] ?? "") ?>
-        <?= $metadata["suffix"] ?>
-    </p>
-<?php endforeach; ?>
-      </section>
+    <?= tampilkanBiodata($fieldConfig,$biodata) ?>
+</section>
+
     <section id="contact">
       <h2>Kontak Kami</h2>
       <form action="proses.php" method="POST">
