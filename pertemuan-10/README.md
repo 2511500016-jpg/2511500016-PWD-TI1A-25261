@@ -11,4 +11,7 @@ Kelompok: TI1A<br>
 <li>Menghapus file index.html dan sudah ada gantinya file index.php</li>
 <li>Membuat file baru dengan nama koneksi.php</li>
 <li>Simpan file koneksi.php. Update file readme.MD sesuai yang telah dilakukan, kemudian simpan. dan jangan lupa MeLakukan perintah git add, git commit, git push.</li>
+<li>Klik tab Databases.</li>
+<li>isi Database name, ketik nama database sesuai langkah ke-4, yakni db_pwd2025. Klik Create.</li>
+<li>Database db_pwd2025 akan terbuat, tetapi dalam keadaan belum memiliki tabel.</li>
 </ol>
