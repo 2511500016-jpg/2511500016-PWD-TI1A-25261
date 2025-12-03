@@ -10,4 +10,5 @@ Kelompok: TI1A<br>
 <li>mengextract bahan pertemuan-10.zip</li>
 <li>Menghapus file index.html dan sudah ada gantinya file index.php</li>
 <li>Membuat file baru dengan nama koneksi.php</li>
+<li>Simpan file koneksi.php. Update file readme.MD sesuai yang telah dilakukan, kemudian simpan. dan jangan lupa MeLakukan perintah git add, git commit, git push.</li>
 </ol>
