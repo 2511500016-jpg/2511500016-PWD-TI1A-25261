@@ -1,1 +1,13 @@
 # pertemuan-10
+
+
+Hari ini, Rabu 12.NOV.2025, saya:<br>
+NIM: 2511500016<br>
+Nama: Dimas Daffah<br>
+Kelompok: TI1A<br>
+
+<ol>
+<li>mengextract bahan pertemuan-10.zip</li>
+<li>Menghapus file index.html dan sudah ada gantinya file index.php</li>
+<li>Membuat file baru dengan nama koneksi.php</li>
+</ol>
