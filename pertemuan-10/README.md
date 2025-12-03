@@ -21,4 +21,5 @@ Kelompok: TI1A<br>
 <li>tbl_tamu memiliki data yang bisa ditampilkan pada langkah ke-8, klik tab Insert.</li>
 <li>Pada form yang ditampilkan pada langkah-10, lakukan pengisian data atau record untuk tabel tbl_tamu. Kalian cukup mengisi baris cnama, cemail, dan cpesan.</li>
 <li>Setelah selesai mengisi baris baris cnama, cemail, dan cpesan klik tombol Go.</li>
+<li>Export database db_pwdd2025</li>
 </ol>
