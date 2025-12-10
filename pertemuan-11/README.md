@@ -13,7 +13,7 @@ Kelompok: TI1A<br>
 <li>Tambahkan penangkap pesan sukses/gagal (flash message dari SESSION).</li>
 <li>Selanjutnya ke Rewrite proses.php.</li>
 <li>Kemudian cek REQUEST_METHOD apakah menggunakan 'POST'.</li>
-<li>Database db_pwd2025 akan terbuat, tetapi dalam keadaan belum memiliki tabel.</li>
+<li>Validasi (tidak boleh kosong, email valid).</li>
 <li>Buka alamat http://localhost/phpmyadmin</li>
 <li>Update file readme.MD sesuai yang telah dilakukan, kemudian simpan dan Jangan luoa Lakukan perintah git add, git commit, git push.</li>
 <li>buat file baru dengan nama read.php di dalam folder pertemuan-10.</li>
