@@ -1,15 +1,15 @@
-# pertemuan-10
+# pertemuan-11
 
 
-Hari ini, Rabu 12.NOV.2025, saya:<br>
+Hari ini, Rabu 10.Desember.2025<br>
 NIM: 2511500016<br>
 Nama: Dimas Daffah<br>
 Kelompok: TI1A<br>
 
 <ol>
-<li>mengextract bahan pertemuan-10.zip</li>
-<li>Menghapus file index.html dan sudah ada gantinya file index.php</li>
-<li>Membuat file baru dengan nama koneksi.php</li>
+<li>Copy hasil latihan pada folder pertemuan-10 sebagai bahan latihan pertemuan-11</li>
+<li>Mengupdate fungsi.php untuk helper redirect sederhana (pola PRG).</li>
+<li>Pastikan form #contact menggunakan method="post" dan action="proses.php".</li>
 <li>Simpan file koneksi.php. Update file readme.MD sesuai yang telah dilakukan, kemudian simpan. dan jangan lupa MeLakukan perintah git add, git commit, git push.</li>
 <li>Klik tab Databases.</li>
 <li>isi Database name, ketik nama database sesuai langkah ke-4, yakni db_pwd2025. Klik Create.</li>
