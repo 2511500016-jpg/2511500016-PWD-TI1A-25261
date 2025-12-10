@@ -10,8 +10,8 @@ Kelompok: TI1A<br>
 <li>Copy hasil latihan pada folder pertemuan-10 sebagai bahan latihan pertemuan-11</li>
 <li>Mengupdate fungsi.php untuk helper redirect sederhana (pola PRG).</li>
 <li>Pastikan form #contact menggunakan method="post" dan action="proses.php".</li>
-<li>Tambahkan penangkap pesan sukses/gagal (flash message dari SESSION)..</li>
-<li>Klik tab Databases.</li>
+<li>Tambahkan penangkap pesan sukses/gagal (flash message dari SESSION).</li>
+<li>Selanjutnya ke Rewrite proses.php.</li>
 <li>isi Database name, ketik nama database sesuai langkah ke-4, yakni db_pwd2025. Klik Create.</li>
 <li>Database db_pwd2025 akan terbuat, tetapi dalam keadaan belum memiliki tabel.</li>
 <li>Buka alamat http://localhost/phpmyadmin</li>
