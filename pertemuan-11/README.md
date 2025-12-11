@@ -15,7 +15,7 @@ Kelompok: TI1A<br>
 <li>Kemudian cek REQUEST_METHOD apakah menggunakan 'POST'.</li>
 <li>Validasi (tidak boleh kosong, email valid).</li>
 <li>INSERT tbl_tamu dengan prepared statement mysqli dan simpan pesan sukses/gagal ke $_SESSION serta redirect balik ke index.php#contact.</li>
-<li> Kemudian Cek data masuk di read.php..</li>
+<li> Kemudian Cek data masuk di read.php.</li>
 <li>Buka alamat http://localhost/phpmyadmin</li>
 <li>Update file readme.MD sesuai yang telah dilakukan, kemudian simpan dan Jangan lupa Lakukan perintah git add, git commit, git push.</li>
 
