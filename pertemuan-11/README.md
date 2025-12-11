@@ -18,6 +18,6 @@ Kelompok: TI1A<br>
 <li> Kemudian Cek data masuk di read.php.</li>
 <li>Buka alamat (http://localhost/phpmyadmin).</li>
 <li>Update file readme.MD sesuai yang telah dilakukan, kemudian simpan dan Jangan lupa Lakukan perintah git add, git commit, git push.</li>
-
+<lo>Tambahkan kolom nomor urut (bukan ID) pada read.php di kolom pertama.</lo>
 
 </ol>
