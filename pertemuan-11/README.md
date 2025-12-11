@@ -17,7 +17,8 @@ Kelompok: TI1A<br>
 <li>INSERT tbl_tamu dengan prepared statement mysqli dan simpan pesan sukses/gagal ke $_SESSION serta redirect balik ke index.php#contact.</li>
 <li> Kemudian Cek data masuk di read.php.</li>
 <li>Buka alamat (http://localhost/phpmyadmin).</li>
-<li>Update file readme.MD sesuai yang telah dilakukan, kemudian simpan dan Jangan lupa Lakukan perintah git add, git commit, git push.</li>
 <lo>Tambahkan kolom nomor urut (bukan ID) pada read.php di kolom pertama.</lo>
+<li>Update file readme.MD sesuai yang telah dilakukan, kemudian simpan dan Jangan lupa Lakukan perintah git add, git commit, git push.</li>
+
 
 </ol>
