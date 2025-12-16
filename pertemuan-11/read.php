@@ -8,11 +8,13 @@ $no = 1;
 
 <table border="1" cellpadding="8" cellspacing="0">
  <tr>
+    
     <th>No</th>
     <th>ID</th>
     <th>Nama</th>
     <th>Email</th>
     <th>Pesan</th>
+    <th>Tanggal</th>
 </tr>
 
 <?php while ($row = mysqli_fetch_assoc($q)): ?>
@@ -21,6 +23,7 @@ $no = 1;
     <td><?= htmlspecialchars($row['cnama']); ?></td>
     <td><?= htmlspecialchars($row['cemail']); ?></td>
     <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
+    <td><?= date('d-m-Y H:i', strtotime($row['dcreated_at'])); ?></td>
 </tr>
 <?php endwhile; ?>
 
