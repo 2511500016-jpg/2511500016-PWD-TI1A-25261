@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 15, 2025 at 02:32 PM
+-- Generation Time: Dec 16, 2025 at 01:47 PM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -30,7 +30,6 @@ USE `db_pwd2025`;
 --
 
 CREATE TABLE `tbl_tamu` (
-  `No` int(11) NOT NULL,
   `cid` int(11) NOT NULL,
   `cnama` varchar(100) DEFAULT NULL,
   `cemail` varchar(100) DEFAULT NULL,
@@ -42,12 +41,14 @@ CREATE TABLE `tbl_tamu` (
 -- Dumping data for table `tbl_tamu`
 --
 
-INSERT INTO `tbl_tamu` (`No`, `cid`, `cnama`, `cemail`, `cpesan`, `dcreated_at`) VALUES
-(0, 1, 'DIMAS DAFFAH', 'Dimasdaffah56@gmail.com', 'ayo mabar pubg mobile di warung kopi di toboali', '2025-12-10 15:35:20'),
-(0, 2, 'ayu', 'ayu@gmail.com', 'ayo kita jalan-jalan', '2025-12-10 15:35:20'),
-(0, 3, 'rafli', 'rafli@a.com', 'ayo kita turing', '2025-12-10 15:35:20'),
-(0, 4, 'awi', 'awi@gmail.com', 'ayo kita beli nasi goreng', '2025-12-10 15:35:20'),
-(0, 5, 'anggi', 'anggi@gmail.com', 'ayo kita mukbang', '2025-12-10 15:36:18');
+INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`, `dcreated_at`) VALUES
+(1, 'DIMAS DAFFAH', 'Dimasdaffah56@gmail.com', 'ayo mabar pubg mobile di warung kopi di toboali', '2025-12-10 15:35:20'),
+(2, 'ayu', 'ayu@gmail.com', 'ayo kita jalan-jalan', '2025-12-10 15:35:20'),
+(3, 'rafli', 'rafli@a.com', 'ayo kita turing', '2025-12-10 15:35:20'),
+(4, 'awi', 'awi@gmail.com', 'ayo kita beli nasi goreng', '2025-12-10 15:35:20'),
+(5, 'anggi', 'anggi@gmail.com', 'ayo kita mukbang', '2025-12-10 15:36:18'),
+(6, 'ayu', 'awi@gmail.com', 'ayo kita beli nasgor', '2025-12-16 11:08:18'),
+(7, 'farhan', 'farhan@gmail.com', 'ayo kita jalan-jalan ke toboali', '2025-12-16 20:14:20');
 
 --
 -- Indexes for dumped tables
@@ -67,7 +68,7 @@ ALTER TABLE `tbl_tamu`
 -- AUTO_INCREMENT for table `tbl_tamu`
 --
 ALTER TABLE `tbl_tamu`
-  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
