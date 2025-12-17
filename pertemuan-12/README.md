@@ -8,6 +8,6 @@ Kelompok: TI1A<br>
 
 <ol>
 <li>Copy hasil latihan pada folder pertemuan-11 sebagai bahan latihan pertemuan-12</li>
-<li>Mengupdate fungsi.php untuk helper redirect sederhana (pola PRG).</li>
+<li>menambahkan kolom Aksi setelah kolom No dengan isi <td> Aksi sama dengan <td> ID.</li>
 
 </ol>
