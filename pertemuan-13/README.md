@@ -10,6 +10,7 @@ Kelompok: TI1A<br>
 <li>Menginpor sql bahan pratikum pertemuan-13.</li>
 <li>menambak link delete di read php ke proses_delete.php.</li>
 <li>salin kode proses_update.php ke file proses_delete.php.</li>
+<li>menyesuaikan kode di proses_delete.php untuk proses hapus.</li>
 
 
 </ol>
