@@ -1,17 +1,15 @@
 # pertemuan-13
 
-
-Hari ini, Rabu 24.Desember.2025<br>
-NIM: 2511500016<br>
-Nama: Dimas Daffah<br>
-Kelompok: TI1A<br>
-
+NIM : 2511500006<br>
+NAMA : Grezelco Govin<br>
+Hari ini, Rabu 24.Des.2025, saya mempelajari:<br>
 <ol>
-<li>Menginpor sql bahan pratikum pertemuan-13.</li>
-<li>menambak link delete di read php ke proses_delete.php.</li>
-<li>salin kode proses_update.php ke file proses_delete.php.</li>
-<li>menyesuaikan kode di proses_delete.php untuk proses hapus.</li>
-<li>menanbah parameter cid untuk link proses_delete.php.</li>
-<li>memperbaiki file proses-Delete.php agar menggunaka parameter cid</li>
+   <li>import sql bahan praktikum pertemuan-13</li>
+   <li>menambah link delete untuk ke file delete_proses.php</li>
+   <li>mengcopy semua code di file proses_update.php ke proses_delete.php</li>
+   <li>menghapus dan mengganti codingan yg ada di delete_proses.php</li>
+   <li>menambahkan parameter cid untuk link delete di read.php</li>
+   <li>memperbaiki file proses_delete.php agar menggunakan parameter cid.</li>
 
-</ol>
+</ol
+>
