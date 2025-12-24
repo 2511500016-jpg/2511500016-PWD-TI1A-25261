@@ -1,7 +1,7 @@
 # pertemuan-13
 
-NIM : 2511500006<br>
-NAMA : Grezelco Govin<br>
+NIM : 2511500016<br>
+NAMA : Dimas Daffah<br>
 Hari ini, Rabu 24.Des.2025, saya mempelajari:<br>
 <ol>
    <li>import sql bahan praktikum pertemuan-13</li>
