@@ -132,8 +132,8 @@ unset($_SESSION['flash_sukses_mhs'], $_SESSION['flash_error_mhs']);
                         <tr>
                             <td><?= $i++; ?></td>
                             <td class="aksi-btn">
-                                <a href="edit_mahasiswa.php?cmid=<?= (int)$row['cmid']; ?>" class="btn-edit">Edit</a>
-                                <a href="neger.php?cmid=<?= (int)$row['cmid']; ?>" 
+                                <a href="edit_biodata.php?cmid=<?= (int)$row['cmid']; ?>" class="btn-edit">Edit</a>
+                                <a href="delete_2.php?cmid=<?= (int)$row['cmid']; ?>" 
                                    class="btn-hapus" 
                                    onclick="return confirm('Hapus data <?= htmlspecialchars($row['cnama']); ?> (NIM: <?= htmlspecialchars($row['cnim']); ?>)?')">
                                     Hapus

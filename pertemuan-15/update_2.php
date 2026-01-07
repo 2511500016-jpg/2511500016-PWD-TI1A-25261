@@ -6,7 +6,7 @@ require_once __DIR__ . '/fungsi.php';
 # Cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error_mhs'] = 'Akses tidak valid.';
-    redirect_ke('read_mahasiswa.php');
+    redirect_ke('read2.php');
 }
 
 # Validasi cmid dari POST
@@ -16,7 +16,7 @@ $cmid = filter_input(INPUT_POST, 'cmid', FILTER_VALIDATE_INT, [
 
 if (!$cmid) {
     $_SESSION['flash_error_edit'] = 'ID Mahasiswa tidak valid.';
-    redirect_ke('edit_mahasiswa.php?cmid=' . (int)$_POST['cmid']);
+    redirect_ke('edit2.php?cmid=' . (int)$_POST['cmid']);
 }
 
 # Ambil dan bersihkan nilai dari form
@@ -78,11 +78,11 @@ if (!empty($errors)) {
     ];
     
     $_SESSION['flash_error_edit'] = implode('<br>', $errors);
-    redirect_ke('edit_mahasiswa.php?cmid=' . $cmid);
+    redirect_ke('edit2.php?cmid=' . $cmid);
 }
 
 # Update data di database menggunakan prepared statement
-$sql = "UPDATE tbl_mahasiswa SET 
+$sql = "UPDATE tbl_biodata SET 
         cnama = ?, 
         ctempat_lahir = ?, 
         ctanggal_lahir = ?, 
@@ -98,7 +98,7 @@ $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
     $_SESSION['flash_error_edit'] = 'Terjadi kesalahan sistem (prepare gagal).';
-    redirect_ke('edit_mahasiswa.php?cmid=' . $cmid);
+    redirect_ke('edit2.php?cmid=' . $cmid);
 }
 
 # Bind parameter dan eksekusi
@@ -128,7 +128,7 @@ if (mysqli_stmt_execute($stmt)) {
     }
     
     # Konsep PRG: Redirect ke halaman data mahasiswa
-    redirect_ke('read_mahasiswa.php');
+    redirect_ke('read2.php');
 } else {
     $_SESSION['old_edit'] = [
         'nama' => $nama,
@@ -143,7 +143,7 @@ if (mysqli_stmt_execute($stmt)) {
     ];
     
     $_SESSION['flash_error_edit'] = 'Data gagal diperbarui. Silakan coba lagi.';
-    redirect_ke('edit_mahasiswa.php?cmid=' . $cmid);
+    redirect_ke('edit2.php?cmid=' . $cmid);
 }
 
 mysqli_stmt_close($stmt);

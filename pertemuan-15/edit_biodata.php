@@ -10,14 +10,14 @@ $cmid = filter_input(INPUT_GET, 'cmid', FILTER_VALIDATE_INT, [
 
 if (!$cmid) {
     $_SESSION['flash_error_mhs'] = 'Akses tidak valid.';
-    redirect_ke('read2.php');
+    redirect_ke('read_mahasiswa.php');
 }
 
 # Ambil data lama dari database
 $stmt = mysqli_prepare($conn, "SELECT * FROM tbl_mahasiswa WHERE cmid = ? LIMIT 1");
 if (!$stmt) {
     $_SESSION['flash_error_mhs'] = 'Query tidak benar.';
-    redirect_ke('read2.php');
+    redirect_ke('read_mahasiswa.php');
 }
 
 mysqli_stmt_bind_param($stmt, "i", $cmid);
@@ -28,7 +28,7 @@ mysqli_stmt_close($stmt);
 
 if (!$row) {
     $_SESSION['flash_error_mhs'] = 'Data mahasiswa tidak ditemukan.';
-    redirect_ke('read2.php');
+    redirect_ke('read_mahasiswa.php');
 }
 
 # Nilai awal (prefill form)
