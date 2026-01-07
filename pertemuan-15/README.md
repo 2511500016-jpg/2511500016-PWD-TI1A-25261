@@ -7,5 +7,6 @@ Hari ini, Rabu 07 January 2026, saya mempelajari:<br>
 <li>Membuat tabel baru</li>
 <li>Proses Menambah data</li>
 <li>kemudian Melakukan validasi,sanitasi,konsep PRG,dan insert ke tabel baru</li>
+<li>Hasil record yang disimpan,dapat ditampilkan menggunakan file pembaca,lengkap dengan link edit dan link hapus.</li>
 
 </ol>
