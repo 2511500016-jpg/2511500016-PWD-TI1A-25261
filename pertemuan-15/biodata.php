@@ -119,11 +119,12 @@ unset($_SESSION['flash_sukses_mhs'], $_SESSION['flash_error_mhs']);
                         <th>Tempat Lahir</th>
                         <th>Tanggal Lahir</th>
                         <th>Hobi</th>
+                        <th>Pasangan</th>
                         <th>Pekerjaan</th>
                         <th>Nama Orang Tua</th>
                         <th>Nama Kakak</th>
                         <th>Nama Adik</th>
-                        <th>Dibuat</th>
+                        <th>Dcreated_at</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -133,9 +134,9 @@ unset($_SESSION['flash_sukses_mhs'], $_SESSION['flash_error_mhs']);
                             <td><?= $i++; ?></td>
                             <td class="aksi-btn">
                                 <a href="edit_biodata.php?cmid=<?= (int)$row['cmid']; ?>" class="btn-edit">Edit</a>
-                                <a href="delete_2.php?cmid=<?= (int)$row['cmid']; ?>" 
-                                   class="btn-hapus" 
-                                   onclick="return confirm('Hapus data <?= htmlspecialchars($row['cnama']); ?> (NIM: <?= htmlspecialchars($row['cnim']); ?>)?')">
+                                <a href="hapus.php?cmid=<?= (int)$row['cmid']; ?>" 
+                                    class="btn-hapus" 
+                                    onclick="return confirm('Hapus data <?= htmlspecialchars($row['cnama']); ?> (NIM: <?= htmlspecialchars($row['cnim']); ?>)?')">
                                     Hapus
                                 </a>
                             </td>
@@ -144,6 +145,7 @@ unset($_SESSION['flash_sukses_mhs'], $_SESSION['flash_error_mhs']);
                             <td><?= htmlspecialchars($row['ctempat_lahir']); ?></td>
                             <td><?= date('d-m-Y', strtotime($row['ctanggal_lahir'])); ?></td>
                             <td><?= htmlspecialchars($row['chobi']); ?></td>
+                            <td><?= htmlspecialchars($row['cpasangan']); ?></td>
                             <td><?= htmlspecialchars($row['cpekerjaan'] ?? '-'); ?></td>
                             <td><?= htmlspecialchars($row['cnama_ortu']); ?></td>
                             <td><?= htmlspecialchars($row['cnama_kakak']); ?></td>
@@ -156,10 +158,16 @@ unset($_SESSION['flash_sukses_mhs'], $_SESSION['flash_error_mhs']);
         <?php else: ?>
             <div style="text-align: center; padding: 40px;">
                 <p style="font-size: 18px; color: #666;">Belum ada data mahasiswa.</p>
-                <a href="index.php#biodata" style="color: #003366; text-decoration: underline;">Klik di sini untuk menambah data</a>
+                <a href="index.php#biodata" style="color: #003366; text-decoration: underline;">Klik di sini untuk menambah new mahasiswa</a>
             </div>
         <?php endif; ?>
         
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.php" style="background-color: #003366; color: white; padding: 10px 20px; 
+                border-radius: 6px; text-decoration: none; display: inline-block;">
+                Kembali ke Beranda
+            </a>
+        </div>
     </main>
 </body>
 </html>

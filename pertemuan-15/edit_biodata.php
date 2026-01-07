@@ -10,14 +10,14 @@ $cmid = filter_input(INPUT_GET, 'cmid', FILTER_VALIDATE_INT, [
 
 if (!$cmid) {
     $_SESSION['flash_error_mhs'] = 'Akses tidak valid.';
-    redirect_ke('read_mahasiswa.php');
+    redirect_ke('biodata.php');
 }
 
 # Ambil data lama dari database
-$stmt = mysqli_prepare($conn, "SELECT * FROM tbl_mahasiswa WHERE cmid = ? LIMIT 1");
+$stmt = mysqli_prepare($conn, "SELECT * FROM tbl_biodata WHERE cmid = ? LIMIT 1");
 if (!$stmt) {
     $_SESSION['flash_error_mhs'] = 'Query tidak benar.';
-    redirect_ke('read_mahasiswa.php');
+    redirect_ke('biodata.php');
 }
 
 mysqli_stmt_bind_param($stmt, "i", $cmid);
@@ -28,7 +28,7 @@ mysqli_stmt_close($stmt);
 
 if (!$row) {
     $_SESSION['flash_error_mhs'] = 'Data mahasiswa tidak ditemukan.';
-    redirect_ke('read_mahasiswa.php');
+    redirect_ke('biodata.php');
 }
 
 # Nilai awal (prefill form)
@@ -75,7 +75,7 @@ if (!empty($old)) {
         <nav>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
-                <li><a href="read_mahasiswa.php">Data Mahasiswa</a></li>
+                <li><a href="biodata.php">Data Mahasiswa</a></li>
                 <li><a href="edit">Edit Biodata</a></li>
             </ul>
         </nav>
@@ -92,7 +92,7 @@ if (!empty($old)) {
                 </div>
             <?php endif; ?>
             
-            <form action="update_mahasiswa.php" method="POST">
+            <form action="proses_mahasiswa.php" method="POST">
                 <input type="hidden" name="cmid" value="<?= (int)$cmid; ?>">
                 
                 <label for="txtNimEdit"><span>NIM:</span>
@@ -154,9 +154,9 @@ if (!empty($old)) {
                         value="<?= htmlspecialchars($nama_adik); ?>">
                 </label>
 
-                <button type="submit">Kirim Perubahan</button>
+                <button type="submit">Update Perubahan</button>
                 <button type="reset">Batal</button>
-                <a href="read_mahasiswa.php" style="background-color: #b4b4b4; color: #272727; 
+                <a href="biodata.php" style="background-color: #b4b4b4; color: #272727; 
                    padding: 10px 20px; border-radius: 6px; text-decoration: none; 
                    display: inline-block; margin-left: 10px;">
                     Kembali

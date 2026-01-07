@@ -10,7 +10,7 @@ $cmid = filter_input(INPUT_GET, 'cmid', FILTER_VALIDATE_INT, [
 
 if (!$cmid) {
     $_SESSION['flash_error_mhs'] = 'ID Mahasiswa tidak valid.';
-    redirect_ke('read2.php');
+    redirect_ke('biodata.php');
 }
 
 # Hapus data dari database menggunakan prepared statement
@@ -18,7 +18,7 @@ $stmt = mysqli_prepare($conn, "DELETE FROM tbl_mahasiswa WHERE cmid = ?");
 
 if (!$stmt) {
     $_SESSION['flash_error_mhs'] = 'Terjadi kesalahan sistem (prepare gagal).';
-    redirect_ke('read2.php');
+    redirect_ke('biodata.php');
 }
 
 mysqli_stmt_bind_param($stmt, "i", $cmid);
@@ -32,5 +32,5 @@ if (mysqli_stmt_execute($stmt)) {
 mysqli_stmt_close($stmt);
 
 # Konsep PRG: Redirect ke halaman data mahasiswa
-redirect_ke('read2.php');
+redirect_ke('biodata.php');
 ?>

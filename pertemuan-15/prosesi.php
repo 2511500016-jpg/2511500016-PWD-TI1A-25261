@@ -68,7 +68,7 @@ if (empty($nama_ortu)) {
 
 # Cek duplikasi NIM
 if (empty($errors)) {
-    $check_nim = "SELECT cmid FROM tbl_mahasiswa WHERE cnim = ?";
+    $check_nim = "SELECT cmid FROM tbl_biodata WHERE cnim = ?";
     $stmt_check = mysqli_prepare($conn, $check_nim);
     mysqli_stmt_bind_param($stmt_check, "s", $nim);
     mysqli_stmt_execute($stmt_check);
