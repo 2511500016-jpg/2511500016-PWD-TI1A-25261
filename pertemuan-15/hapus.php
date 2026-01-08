@@ -14,7 +14,7 @@ if (!$cmid) {
 }
 
 # Hapus data dari database menggunakan prepared statement
-$stmt = mysqli_prepare($conn, "DELETE FROM tbl_mahasiswa WHERE cmid = ?");
+$stmt = mysqli_prepare($conn, "DELETE FROM tbl_biodata WHERE cmid = ?");
 
 if (!$stmt) {
     $_SESSION['flash_error_mhs'] = 'Terjadi kesalahan sistem (prepare gagal).';
