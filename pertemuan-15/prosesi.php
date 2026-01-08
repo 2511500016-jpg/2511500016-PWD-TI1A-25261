@@ -114,7 +114,7 @@ $_SESSION['biodata'] = [
 ];
 
 # Insert data ke database menggunakan prepared statement
-$sql = "INSERT INTO tbl_mahasiswa (cnim, cnama, ctempat_lahir, ctanggal_lahir, 
+$sql = "INSERT INTO tbl_biodata (cnim, cnama, ctempat_lahir, ctanggal_lahir, 
         chobi, cpasangan, cpekerjaan, cnama_ortu, cnama_kakak, cnama_adik) 
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
