@@ -83,10 +83,16 @@ simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
   $_SESSION['old'] = [
-    'nama'  => $nama,
-    'email' => $email,
-    'pesan' => $pesan,
-    'captcha' => $captcha,
+    'kode_dosen'  => $kode_dosen,
+    'nama' => $nama,
+    'alamat' => $alamat,
+    'tanggal' => $tanggal,
+    'jja' => $jja,
+    'prodi' => $prodi,
+    'nohp' => $nohp,
+    'pasangan' => $pasangan,
+    'anak' => $anak,
+    'ilmu' => $ilmu
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -94,7 +100,7 @@ if (!empty($errors)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_dosen (cnama, cemail, cpesan) VALUES (?, ?, ?)";
+$sql = "INSERT INTO tbl_dosen (ckode_dosen, cnama, calamat_rumah, ctanggal_jadi_dosen, cjja_dosen, chome_base_prodi, cno_hp, cnama_pasangan, cnama_anak, cbidang_ilmu_dosen) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
@@ -103,7 +109,7 @@ if (!$stmt) {
   redirect_ke('index.php#contact');
 }
 #bind parameter dan eksekusi (s = string)
-mysqli_stmt_bind_param($stmt, "sss", $nama, $email, $pesan);
+mysqli_stmt_bind_param($stmt, "ssssssssss", $kode_dosen, $nama, $alamat, $tanggal, $jja, $prodi, $nohp, $pasangan, $anak, $ilmu);
 
 if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesan sukses
   unset($_SESSION['old']);
