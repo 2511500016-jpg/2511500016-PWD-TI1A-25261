@@ -34,6 +34,5 @@ if (!$q) {
   "anak" => $_POST["txtNamaAnak"] ?? "",
   "ilmu" => $_POST["txtBidangIlmu"] ?? "" 
     echo tampilkanBiodata($fieldContact, $arrContact);
-  }
 }
 ?>
