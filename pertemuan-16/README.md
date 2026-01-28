@@ -5,3 +5,4 @@ NAMA : Dimas Daffah<br>
 Hari ini, Rabu 28 January 2026, saya UAS:<br>
 <ol>
 <li>Membuat tabel baru.</li>
+<li>Proses Menambah data.</li>
