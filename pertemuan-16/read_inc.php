@@ -23,9 +23,16 @@ if (!$q) {
 } else {
   while ($row = mysqli_fetch_assoc($q)) {
     $arrContact = [
-      "nama"  => $row["cnama"]  ?? "",
-      "email" => $row["cemail"] ?? "",
-      "pesan" => $row["cpesan"] ?? "",
+      "kode_dosen" => $row["kode_dosen"] ?? "",
+      "nama_dosen" => $row["nama_dosen"] ?? "",
+      "alamat_rumah" => $row["alamat_rumah"] ?? "",
+      "tanggal_jadi_dosen" => $row["tanggal_jadi_dosen"] ?? "",
+      "jja_dosen" => $row["jja_dosen"] ?? "",
+      "home_base_prodi" => $row["home_base_prodi"] ?? "",
+      "nomor_hp" => $row["nomor_hp"] ?? "",
+      "nama_pasangan" => $row["nama_pasangan"] ?? "",
+      "nama_anak" => $row["nama_anak"] ?? "",
+      "bidang_ilmu_dosen" => $row["bidang_ilmu_dosen"] ?? "",
     ];
     echo tampilkanBiodata($fieldContact, $arrContact);
   }
