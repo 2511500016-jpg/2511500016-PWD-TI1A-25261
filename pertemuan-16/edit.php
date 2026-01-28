@@ -38,7 +38,7 @@
     Ambil data lama dari DB menggunakan prepared statement, 
     jika ada kesalahan, tampilkan penanda error.
   */
-  $stmt = mysqli_prepare($conn, "SELECT ckode_dosen, cnama, calamat, ctanggal_jadi_dosen, cjja_dosen, chome_base_prodi, cno_hp, cnama_pasangan, cnama_anak, cbidang_ilmu_dosen
+  $stmt = mysqli_prepare($conn, "SELECT cid, cnama, cemail, cpesan 
                                     FROM tbl_dosen WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
