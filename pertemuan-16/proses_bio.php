@@ -10,7 +10,7 @@ require_once __DIR__ . '/fungsi.php';
 */
 
 $arrBiodata = [
-  "kodedos" => $_POST["txtKodeDos"] ?? "",
+  "kodedosen" => $_POST["txtKodeDosen"] ?? "",
   "nama" => $_POST["txtNmDosen"] ?? "",
   "alamat" => $_POST["txtAlRmh"] ?? "",
   "tanggal" => $_POST["txtTglDosen"] ?? "",
