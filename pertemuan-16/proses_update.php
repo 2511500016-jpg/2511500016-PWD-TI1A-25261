@@ -74,12 +74,28 @@ if ($ilmu === '') {
 }
 
 
+  if (mb_strlen($kode_dosen) < 3) {
+    $errors[] = 'Kode Dosen minimal 3 karakter.';
+  }
+
   if (mb_strlen($nama) < 3) {
     $errors[] = 'Nama minimal 3 karakter.';
   }
 
-  if (mb_strlen($pesan) < 10) {
-    $errors[] = 'Pesan minimal 10 karakter.';
+  if (mb_strlen($alamat) < 20) {
+    $errors[] = 'Alamat minimal 20 karakter.';
+  }
+
+  if (mb_strlen($jja) < 10) {
+    $errors[] = 'JJA minimal 10 karakter.';
+  }
+
+  if (mb_strlen($prodi) < 11) {
+    $errors[] = 'Prodi minimal 11 karakter.';
+  }
+
+  if (mb_strlen($nohp) < 12) {
+    $errors[] = 'No HP minimal 12 karakter.';
   }
 
   if ($captcha!=="6") {
