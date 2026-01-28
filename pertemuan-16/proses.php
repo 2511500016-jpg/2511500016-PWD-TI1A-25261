@@ -54,6 +54,17 @@ if ($nohp === '') {
   $errors[] = 'No HP wajib diisi.';
 }
 
+if ($pasangan === '') {
+  $errors[] = 'Nama Pasangan wajib diisi.';
+}
+
+if ($anak === '') {
+  $errors[] = 'Nama Anak wajib diisi.';
+}
+if ($ilmu === '') {
+  $errors[] = 'Bidang Ilmu Dosen wajib diisi.';
+}
+
 if (mb_strlen($nama) < 3) {
   $errors[] = 'Nama minimal 3 karakter.';
 }
@@ -83,7 +94,7 @@ if (!empty($errors)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
+$sql = "INSERT INTO tbl_dosen (cnama, cemail, cpesan) VALUES (?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
@@ -100,10 +111,16 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
   redirect_ke('index.php#contact'); #pola PRG: kembali ke form / halaman home
 } else { #jika gagal, simpan kembali old value dan tampilkan error umum
   $_SESSION['old'] = [
-    'nama'  => $nama,
-    'email' => $email,
-    'pesan' => $pesan,
-    'captcha' => $captcha,
+    'kode_dosen'  => $kode_dosen,
+    'nama' => $nama,
+    'alamat' => $alamat,
+    'tanggal' => $tanggal,
+    'jja' => $jja,
+    'prodi' => $prodi,
+    'nohp' => $nohp,
+    'pasangan' => $pasangan,
+    'anak' => $anak,
+    'ilmu' => $ilmu
   ];
   $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
   redirect_ke('index.php#contact');

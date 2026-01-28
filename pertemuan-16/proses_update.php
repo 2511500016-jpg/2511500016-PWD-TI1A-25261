@@ -78,8 +78,8 @@
     menyiapkan query UPDATE dengan prepared statement 
     (WAJIB WHERE cid = ?)
   */
-  $stmt = mysqli_prepare($conn, "UPDATE tbl_tamu 
-                                SET cnama = ?, cemail = ?, cpesan = ? 
+  $stmt = mysqli_prepare($conn, "UPDATE tbl_dosen 
+                                SET ckode_dosen = ?, cnama = ?, calamat = ?, ctanggal = ?, cjja = ?, cprodi = ?, cnohp = ?, cpasangan = ?, canak = ?, cilmu = ? 
                                 WHERE cid = ?");
   if (!$stmt) {
     #jika gagal prepare, kirim pesan error (tanpa detail sensitif)
@@ -99,9 +99,16 @@
     redirect_ke('read.php'); #pola PRG: kembali ke data dan exit()
   } else { #jika gagal, simpan kembali old value dan tampilkan error umum
     $_SESSION['old'] = [
-      'nama'  => $nama,
-      'email' => $email,
-      'pesan' => $pesan,
+      'kode_dosen'  => $kode_dosen,
+      'nama' => $nama,
+      'alamat' => $alamat,
+      'tanggal' => $tanggal,
+      'jja' => $jja,
+      'prodi' => $prodi,
+      'nohp' => $nohp,
+      'pasangan' => $pasangan,
+      'anak' => $anak,
+      'ilmu' => $ilmu
     ];
     $_SESSION['flash_error'] = 'Data gagal diperbaharui. Silakan coba lagi.';
     redirect_ke('edit.php?cid='. (int)$cid);
