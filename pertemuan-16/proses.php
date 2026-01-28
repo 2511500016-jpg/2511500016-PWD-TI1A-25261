@@ -24,22 +24,34 @@ $ilmu = bersihkan($_POST['txtBidangIlmu'] ?? '');
 #Validasi sederhana
 $errors = []; #ini array untuk menampung semua error yang ada
 
-if ($nama === '') {
-  $errors[] = 'Nama wajib diisi.';
+if ($kode_dosen === '') {
+  $errors[] = 'Kode Dosen wajib diisi.';
 }
 
-if ($email === '') {
-  $errors[] = 'Email wajib diisi.';
+if ($nama === '') {
+  $errors[] = 'Nama Dosen wajib diisi.';
 } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   $errors[] = 'Format e-mail tidak valid.';
 }
 
-if ($pesan === '') {
-  $errors[] = 'Pesan wajib diisi.';
+if ($alamat === '') {
+  $errors[] = 'Alamat Rumah wajib diisi.';
 }
 
-if ($captcha === '') {
-  $errors[] = 'Pertanyaan wajib diisi.';
+if ($tanggal === '') {
+  $errors[] = 'Tanggal Jadi Dosen wajib diisi.';
+}
+
+if ($jja === '') {
+  $errors[] = 'JJA wajib diisi.';
+}
+
+if ($prodi === '') {
+  $errors[] = 'Home Base Prodi wajib diisi.';
+}
+
+if ($nohp === '') {
+  $errors[] = 'No HP wajib diisi.';
 }
 
 if (mb_strlen($nama) < 3) {
