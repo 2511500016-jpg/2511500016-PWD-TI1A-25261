@@ -42,8 +42,8 @@ require_once __DIR__ . '/fungsi.php';
       <h2>Biodata Dosen</h2>
       <form action="proses_bio.php" method="POST">
 
-        <label for="txtKodeDos"><span>Kode Dosen:</span>
-          <input type="text" id="txtKodeDos" name="txtKodeDos" placeholder="Masukkan Kode Dosen" required>
+        <label for="txtKodeDosen"><span>Kode Dosen:</span>
+          <input type="text" id="txtKodeDosen" name="txtKodeDosen" placeholder="Masukkan Kode Dosen" required>
         </label>
 
         <label for="txtNmDosen"><span>Nama Dosen:</span>
