@@ -57,18 +57,32 @@
   }
 
   #Nilai awal (prefill form)
-  $nama  = $row['cnama'] ?? '';
-  $email = $row['cemail'] ?? '';
-  $pesan = $row['cpesan'] ?? '';
+  $kode_dosen  = $row['ckode_dosen'] ?? '';
+  $nama = $row['cnama'] ?? '';
+  $alamat = $row['calamat'] ?? '';
+  $tanggal = date('Y-m-d', strtotime($row['ctanggal_jadi_dosen'])) ?? '';
+  $jja = $row['cjja_dosen'] ?? '';
+  $prodi = $row['chome_base_prodi'] ?? '';
+  $nohp = $row['cno_hp'] ?? '';
+  $pasangan = $row['cnama_pasangan'] ?? '';
+  $anak = $row['cnama_anak'] ?? '';
+  $ilmu = $row['cbidang_ilmu_dosen'] ?? '';
 
   #Ambil error dan nilai old input kalau ada
   $flash_error = $_SESSION['flash_error'] ?? '';
   $old = $_SESSION['old'] ?? [];
   unset($_SESSION['flash_error'], $_SESSION['old']);
   if (!empty($old)) {
-    $nama  = $old['nama'] ?? $nama;
-    $email = $old['email'] ?? $email;
-    $pesan = $old['pesan'] ?? $pesan;
+    $kode_dosen = $old['kode_dosen'] ?? $kode_dosen;
+    $nama = $old['nama'] ?? $nama;
+    $alamat = $old['alamat'] ?? $alamat;
+    $tanggal = $old['tanggal'] ?? $tanggal;
+    $jja = $old['jja'] ?? $jja;
+    $prodi = $old['prodi'] ?? $prodi;
+    $nohp = $old['nohp'] ?? $nohp;
+    $pasangan = $old['pasangan'] ?? $pasangan;
+    $anak = $old['anak'] ?? $anak;
+    $ilmu = $old['ilmu'] ?? $ilmu;
   }
 ?>
 
