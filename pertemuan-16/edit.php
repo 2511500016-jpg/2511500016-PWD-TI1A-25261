@@ -39,7 +39,7 @@
     jika ada kesalahan, tampilkan penanda error.
   */
   $stmt = mysqli_prepare($conn, "SELECT cid, cnama, cemail, cpesan 
-                                    FROM tbl_tamu WHERE cid = ? LIMIT 1");
+                                    FROM tbl_dosen WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
     redirect_ke('read.php');
@@ -108,28 +108,63 @@
 
           <input type="text" name="cid" value="<?= (int)$cid; ?>">
 
+          <label for="txtKodeDosen"><span>Kode Dosen:</span>
+            <input type="text" id="txtKodeDosen" name="txtKodeDosenEd" 
+              placeholder="Masukkan kode dosen" required autocomplete="name"
+              value="<?= !empty($kode_dosen) ? $kode_dosen : '' ?>">
+          </label>
+
           <label for="txtNama"><span>Nama:</span>
             <input type="text" id="txtNama" name="txtNamaEd" 
               placeholder="Masukkan nama" required autocomplete="name"
               value="<?= !empty($nama) ? $nama : '' ?>">
           </label>
 
-          <label for="txtEmail"><span>Email:</span>
-            <input type="email" id="txtEmail" name="txtEmailEd" 
-              placeholder="Masukkan email" required autocomplete="email"
-              value="<?= !empty($email) ? $email : '' ?>">
+          <label for="txtAlamat"><span>Alamat:</span>
+            <input type="text" id="txtAlamat" name="txtAlamatEd" 
+              placeholder="Masukkan alamat" required autocomplete="name"
+              value="<?= !empty($alamat) ? $alamat : '' ?>">
           </label>
 
-          <label for="txtPesan"><span>Pesan Anda:</span>
-            <textarea id="txtPesan" name="txtPesanEd" rows="4" 
-              placeholder="Tulis pesan anda..." 
-              required><?= !empty($pesan) ? $pesan : '' ?></textarea>
+          <label for="txtTanggal"><span>Tanggal Jadi Dosen:</span>
+            <input type="date" id="txtTanggal" name="txtTanggalEd" 
+              placeholder="Masukkan tanggal jadi dosen" required
+              value="<?= !empty($tanggal) ? $tanggal : '' ?>">
           </label>
 
-          <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
-            <input type="number" id="txtCaptcha" name="txtCaptcha" 
-              placeholder="Jawab Pertanyaan..." required>
+          <label for="txtJJA"><span>JJA:</span>
+            <input type="text" id="txtJJA" name="txtJJAE" 
+              placeholder="Masukkan JJA" required autocomplete="name"
+              value="<?= !empty($jja) ? $jja : '' ?>">
           </label>
+
+          <label for="txtProdi"><span>Home Base Prodi:</span>
+            <input type="text" id="txtProdi" name="txtProdiEd" 
+              placeholder="Masukkan home base prodi" required autocomplete="name"
+              value="<?= !empty($prodi) ? $prodi : '' ?>">
+          </label>
+
+          <label for="txtNoHP"><span>No HP:</span>
+            <input type="text" id="txtNoHP" name="txtNoHPEd" 
+              placeholder="Masukkan no hp dosen" required autocomplete="name"
+              value="<?= !empty($nohp) ? $nohp : '' ?>">
+          </label>
+
+          <label for="txtPasangan"><span>Nama Pasangan:</span>
+            <input type="text" id="txtPasangan" name="txtNamaPasanganEd"
+              placeholder="" required autocomplete=""
+              value="<?= !empty($pasangan) ? $pasangan : '' ?>">
+          </label>
+
+          <label for="txtAnak"><span>Nama Anak:</span>
+            <input type="text" id="txtAnak" name="txtNamaAnak
+              placeholder="" required autocomplete=""
+              value="<?= !empty($anak) ? $anak : '' ?>">
+          </label>
+          <label for="txtBidangIlmu"><span>Bidang Ilmu Dosen:</span>
+            <input type="text" id="txtBidangIlmu" name="txtBidangIlmuEd" 
+              placeholder="Masukkan bidang ilmu dosen" required autocomplete="name"
+              value="<?= !empty($ilmu) ? $ilmu : '' ?>">
 
           <button type="submit">Kirim</button>
           <button type="reset">Batal</button>

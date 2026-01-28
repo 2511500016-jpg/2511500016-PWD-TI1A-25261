@@ -49,9 +49,9 @@ unset($_SESSION['flash_sukses_dosen'], $_SESSION['flash_error_dosen']);
     <tr>
         <td><?= $i++ ?></td>
         <td>
-            <a href="edit_dosen.php?kode_dosen=<?= htmlspecialchars($row['kode_dosen']); ?>">Edit</a>
+            <a href="edit.php?kode_dosen=<?= htmlspecialchars($row['kode_dosen']); ?>">Edit</a>
             <a onclick="return confirm('Hapus <?= htmlspecialchars($row['nama_dosen']); ?>?')"
-               href="hapus_dosen.php?kode_dosen=<?= htmlspecialchars($row['kode_dosen']); ?>">
+               href="proses_hapus.php?kode_dosen=<?= htmlspecialchars($row['kode_dosen']); ?>">
                Delete
             </a>
         </td>

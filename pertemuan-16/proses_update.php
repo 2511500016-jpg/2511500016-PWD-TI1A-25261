@@ -20,31 +20,59 @@
   }
 
   #ambil dan bersihkan (sanitasi) nilai dari form
-  $nama  = bersihkan($_POST['txtNamaEd']  ?? '');
-  $email = bersihkan($_POST['txtEmailEd'] ?? '');
-  $pesan = bersihkan($_POST['txtPesanEd'] ?? '');
-  $captcha = bersihkan($_POST['txtCaptcha'] ?? '');
-
+  $kode_dosen  = bersihkan($_POST['txtKodeDosenEd']  ?? '');
+  $nama = bersihkan($_POST['txtNamaEd'] ?? '');
+  $alamat = bersihkan($_POST['txtAlamatEd'] ?? '');
+  $tanggal = bersihkan($_POST['txtTanggalEd'] ?? '');
+  $jja = bersihkan($_POST['txtJJAE'] ?? '');
+  $prodi = bersihkan($_POST['txtProdiEd'] ?? '');
+  $nohp = bersihkan($_POST['txtNoHPEd'] ?? '');
+  $pasangan = bersihkan($_POST['txtNamaPasanganEd'] ?? '');
+  $anak = bersihkan($_POST['txtNamaAnakEd'] ?? '');
+  $ilmu = bersihkan($_POST['txtBidangIlmuEd'] ?? '');
   #Validasi sederhana
   $errors = []; #ini array untuk menampung semua error yang ada
+if ($kode_dosen === '') {
+  $errors[] = 'Kode Dosen wajib diisi.';
+}
 
-  if ($nama === '') {
-    $errors[] = 'Nama wajib diisi.';
-  }
+if ($nama === '') {
+  $errors[] = 'Nama Dosen wajib diisi.';
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $errors[] = 'Format e-mail tidak valid.';
+}
 
-  if ($email === '') {
-    $errors[] = 'Email wajib diisi.';
-  } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'Format e-mail tidak valid.';
-  }
+if ($alamat === '') {
+  $errors[] = 'Alamat Rumah wajib diisi.';
+}
 
-  if ($pesan === '') {
-    $errors[] = 'Pesan wajib diisi.';
-  }
+if ($tanggal === '') {
+  $errors[] = 'Tanggal Jadi Dosen wajib diisi.';
+}
 
-  if ($captcha === '') {
-    $errors[] = 'Pertanyaan wajib diisi.';
-  }
+if ($jja === '') {
+  $errors[] = 'JJA wajib diisi.';
+}
+
+if ($prodi === '') {
+  $errors[] = 'Home Base Prodi wajib diisi.';
+}
+
+if ($nohp === '') {
+  $errors[] = 'No HP wajib diisi.';
+}
+
+if ($pasangan === '') {
+  $errors[] = 'Nama Pasangan wajib diisi.';
+}
+
+if ($anak === '') {
+  $errors[] = 'Nama Anak wajib diisi.';
+}
+if ($ilmu === '') {
+  $errors[] = 'Bidang Ilmu Dosen wajib diisi.';
+}
+
 
   if (mb_strlen($nama) < 3) {
     $errors[] = 'Nama minimal 3 karakter.';
@@ -64,9 +92,16 @@
   */
   if (!empty($errors)) {
     $_SESSION['old'] = [
-      'nama'  => $nama,
-      'email' => $email,
-      'pesan' => $pesan
+      'kode_dosen'  => $kode_dosen,
+      'nama' => $nama,
+      'alamat' => $alamat,
+      'tanggal' => $tanggal,
+      'jja' => $jja,
+      'prodi' => $prodi,
+      'nohp' => $nohp,
+      'pasangan' => $pasangan,
+      'anak' => $anak,
+      'ilmu' => $ilmu
     ];
 
     $_SESSION['flash_error'] = implode('<br>', $errors);
